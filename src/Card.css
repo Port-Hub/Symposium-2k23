@@ -22,7 +22,8 @@
   flex: 1;
 }
 
-.card-details {
+.card-props
+ {
   width: 0;
   padding: 20px;
   background-color: #f9f9f9;
@@ -36,7 +37,8 @@
   transform: scale(1.05);
 }
 
-.card.hovered .card-details {
+.card.hovered .card-props
+ {
   width: 200px;
 }
 
@@ -49,7 +51,7 @@ p {
   font-size: 14px;
 } */
 
-.card-container {
+/* .card-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,10 +73,11 @@ p {
   flex: 1;
 }
 
-.card-details {
+.card-props
+ {
   position: absolute;
   top: 0;
-  right: -200px; /* Start off-screen */
+  right: -200px;
   width: 200px;
   height: 100%;
   background-color: #f9f9f9;
@@ -85,7 +88,8 @@ p {
   opacity: 0;
 }
 
-.card:hover .card-details {
+.card:hover .card-props
+ {
   right: 0;
   opacity: 1;
 }
@@ -97,4 +101,4 @@ h2 {
 p {
   margin: 0;
   font-size: 14px;
-}
+} */

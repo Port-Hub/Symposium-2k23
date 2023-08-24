@@ -1,13 +1,13 @@
-import "./App.css";
+import React from "react";
+import BlogSlidder from "./BlogSlidder";
+import Cards from "./Cards";
 
-import TextReveal from "./TextReveal";
-
-function App() {
+const App = () => {
   return (
-    <>
-      <TextReveal />
-    </>
+    <div>
+      <BlogSlidder />
+    </div>
   );
-}
+};
 
 export default App;
