@@ -26,27 +26,27 @@ body {
   position: relative;
   max-width: 70%;
   margin: auto;
-  background: hsla(215, 50%, 25%, 1);
+  background: rgba(32, 58, 96, 0.4);
 
   background: linear-gradient(
     315deg,
-    hsla(215, 50%, 25%, 1) 0%,
-    hsla(0, 0%, 0%, 1) 52%,
-    hsla(215, 50%, 25%, 1) 100%
+    hsla(215, 50%, 25%, 0.6) 0%,
+    hsla(0, 0%, 0%, 0.4) 52%,
+    hsla(215, 50%, 25%, 0.6) 100%
   );
 
   background: -moz-linear-gradient(
     315deg,
-    hsla(215, 50%, 25%, 1) 0%,
-    hsla(0, 0%, 0%, 1) 52%,
-    hsla(215, 50%, 25%, 1) 100%
+    hsla(215, 50%, 25%, 0.4) 0%,
+    hsla(0, 0%, 0%, 0.4) 52%,
+    hsla(215, 50%, 25%, 0.4) 100%
   );
 
   background: -webkit-linear-gradient(
     315deg,
-    hsla(215, 50%, 25%, 1) 0%,
-    hsla(0, 0%, 0%, 1) 52%,
-    hsla(215, 50%, 25%, 1) 100%
+    hsla(215, 50%, 25%, 0.4) 0%,
+    hsla(0, 0%, 0%, 0.4) 52%,
+    hsla(215, 50%, 25%, 0.4) 100%
   ); /* Night sky gradient */
   backdrop-filter: blur(10px); /* Apply backdrop filter for blur effect */
   border: 1px solid rgba(255, 255, 255, 0.2); /* Transparent white border */
@@ -229,11 +229,11 @@ body {
 }
 .blog-slider__button {
   display: inline-flex;
-  background-color: rgb(236, 86, 236);
+  background-color: rgb(38, 75, 161);
   padding: 15px 35px;
   border-radius: 50px;
   color: #fff;
-  box-shadow: 0px 14px 80px rgba(252, 56, 56, 0.4);
+  /* box-shadow: 0px 14px 80px rgba(252, 56, 56, 0.4); */
   text-decoration: none;
   font-weight: 500;
   justify-content: center;

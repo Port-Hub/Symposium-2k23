@@ -1,11 +1,13 @@
 import React from "react";
-import BlogSlidder from "./BlogSlidder";
-import Cards from "./Cards";
+
+import Cards from "./components/Cards";
+import Flakes from "./components/Background";
 
 const App = () => {
   return (
     <div>
-      <BlogSlidder />
+      <Flakes />
+      <Cards />
     </div>
   );
 };

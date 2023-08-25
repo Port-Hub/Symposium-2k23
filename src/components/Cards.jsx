@@ -1,7 +1,7 @@
 import { useEffect } from "react";
-import "./BlogSlidder.css";
+import "./Card.css";
 
-function BlogSlidder() {
+function Cards() {
   useEffect(() => {
     const script = document.createElement("script");
     script.innerHTML = `
@@ -89,4 +89,4 @@ function BlogSlidder() {
   );
 }
 
-export default BlogSlidder;
+export default Cards;
