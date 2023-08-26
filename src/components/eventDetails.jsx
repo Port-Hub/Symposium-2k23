@@ -1,7 +1,9 @@
+import Image from "../assets/harrypotter.0.jpg";
+
 const eventDetails = [
   {
     name: "Code Golfing",
-    image: Golfing,
+    image: Image,
     id: "golfing",
     number: "1",
     venue: "A12",
@@ -50,7 +52,7 @@ const eventDetails = [
   },
   {
     name: "Hugs & Bugs",
-    image: Hugs,
+    image: Image,
     id: "hugs",
     number: "2",
     venue: "COE and H22",
@@ -97,7 +99,7 @@ const eventDetails = [
   },
   {
     name: "Santa Maria Hunt",
-    image: Santa,
+    image: Image,
     id: "santa",
     number: "1 - 3",
     venue: "I22, Final Round : A12",
@@ -153,7 +155,7 @@ const eventDetails = [
   },
   {
     name: "Select from Brainz",
-    image: Brainz,
+    image: Image,
     id: "brainz",
     number: "2 - 3",
     venue: "I24",
@@ -189,7 +191,7 @@ const eventDetails = [
   },
   {
     name: "Whack-A-Bug",
-    image: Bugs,
+    image: Image,
     id: "bugs",
     number: "2",
     venue: "H22",
@@ -219,7 +221,7 @@ const eventDetails = [
   },
   {
     name: "Hack Wheel",
-    image: Wheel,
+    image: Image,
     id: "wheel",
     number: "4",
     venue: "I13 and COE",
@@ -251,7 +253,7 @@ const eventDetails = [
   },
   {
     name: "Scroll Unveilling",
-    image: Scroll,
+    image: Image,
     id: "scroll",
     number: "3",
     venue: "I21",
@@ -283,7 +285,7 @@ const eventDetails = [
   },
   {
     name: "Turn Coat",
-    image: Turn,
+    image: Image,
     id: "turn",
     number: "1",
     venue: "I24",

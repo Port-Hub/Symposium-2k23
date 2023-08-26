@@ -32,9 +32,9 @@ function Cards({ cardData }) {
               key={index}
               image={card.image}
               name={card.name}
-              title={card.title}
-              text={card.text}
+              description={card.description}
               id={card.id}
+              rules={card.rules}
             />
           ))}
         </div>
