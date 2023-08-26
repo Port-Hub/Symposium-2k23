@@ -1,5 +1,5 @@
 
-var colour="random"; // "random" can be replaced with any valid colour ie: "red"...
+var colour="white"; // "random" can be replaced with any valid colour ie: "red"...
 var sparkles=100;// increase of decrease for number of sparkles falling
 
 var x=ox=400;
@@ -16,7 +16,7 @@ var tinyx=new Array();
 var tinyy=new Array();
 var tinyv=new Array();
 
-colours=new Array('#ff0000','#00ff00','#ffffff','#ff00ff','#ffa500','#ffff00','#00ff00','#ffffff','ff00ff')
+colours=new Array('#FFFFFF')
 
 n = 10;
 y = 0;
@@ -60,7 +60,7 @@ function animate(){
 
 	if (ie)con.style.top=document.body.scrollTop + 'px';
 
-	for (i = 0; i < n; i++){
+	for (i = 1; i < n; i++){
 
 		var temp1 = eval(d+a+"dots"+i+n6r+s);
 
@@ -82,7 +82,7 @@ function animate(){
 		}
 	}
 
-	setTimeout("animate()",10);
+	setTimeout("animate()",20);
 }
 
 animate();
@@ -144,12 +144,14 @@ function update_star(i) {
 		if (stary[i]<shigh+sdown) {
 			star[i].style.top=stary[i]+"px";
 			star[i].style.left=starx[i]+"px";
+			
 		}
 		else {
 			star[i].style.visibility="hidden";
 			starv[i]=0;
 			return;
 		}
+	
 	}
 	else {
 		tinyv[i]=50;
@@ -159,12 +161,14 @@ function update_star(i) {
 		tiny[i].style.height="2px";
 		tiny[i].style.backgroundColor=star[i].childNodes[0].style.backgroundColor;
 		star[i].style.visibility="hidden";
-		tiny[i].style.visibility="visible"
+		tiny[i].style.visibility="visible";
+		
 	}
+	
 }
 
 function update_tiny(i) {
-	if (--tinyv[i]==25) {
+	if (--tinyv[i]==50) {
 		tiny[i].style.width="1px";
 		tiny[i].style.height="1px";
 	}
@@ -180,8 +184,11 @@ function update_tiny(i) {
 			tinyv[i]=0;
 			return;
 		}
+		
+
 	}
 	else tiny[i].style.visibility="hidden";
+	
 }
 
 document.onmousemove=mouse;
