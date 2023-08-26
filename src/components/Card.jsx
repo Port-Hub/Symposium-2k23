@@ -1,8 +1,8 @@
 import React from "react";
 import "./Card.css";
-function Card({ imageUrl, date, title, text }) {
+function Card({ imageUrl, date, title, text, id }) {
   return (
-    <div className="blog-slider__item swiper-slide">
+    <div data-hash={id} className="blog-slider__item swiper-slide">
       <div className="blog-slider__img">
         <img src={imageUrl} alt="" />
       </div>

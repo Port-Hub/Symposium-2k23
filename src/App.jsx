@@ -1,54 +1,48 @@
-// import React from "react";
-
-// import Cards from "./components/Cards";
 import Flakes from "./components/Background";
 
-// const App = () => {
-//   return (
-//     <div>
-//       <Flakes />
-//       <Cards />
-//     </div>
-//   );
-// };
+import React, { useRef } from "react";
+import { BrowserRouter } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 
-// export default App;
-
-import React from "react";
 import Cards from "./components/Cards";
 import "./App.css";
 
 const cardData = [
   {
+    id: "one",
     imageUrl:
       "https://res.cloudinary.com/muhammederdem/image/upload/v1535759872/kuldar-kalvik-799168-unsplash.jpg",
     date: "26 December 2019",
-    title: "Lorem Ipsum Dolor",
+    title: "One",
     text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?",
   },
-  // Add more card data objects here
+
   {
+    id: "two",
     imageUrl:
       "https://res.cloudinary.com/muhammederdem/image/upload/v1535759872/kuldar-kalvik-799168-unsplash.jpg",
     date: "26 December 2019",
-    title: "Lorem Ipsum Dolor",
+    title: "Two",
     text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?",
   },
   {
+    id: "three",
     imageUrl:
       "https://res.cloudinary.com/muhammederdem/image/upload/v1535759872/kuldar-kalvik-799168-unsplash.jpg",
     date: "26 December 2019",
-    title: "Lorem Ipsum Dolor",
+    title: "Three",
     text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?",
   },
 ];
 
 function App() {
   return (
-    <div className="App">
-      <Flakes />
-      <Cards cardData={cardData} />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Flakes />
+        <Cards cardData={cardData} />
+      </div>
+    </BrowserRouter>
   );
 }
 

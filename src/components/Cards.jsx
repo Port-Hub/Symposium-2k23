@@ -17,6 +17,9 @@ function Cards({ cardData }) {
         el: ".blog-slider__pagination",
         clickable: true,
       },
+      hashNavigation: {
+    replaceState: true,
+  },
     })`;
     document.body.appendChild(script);
   }, []);
@@ -31,6 +34,7 @@ function Cards({ cardData }) {
               date={card.date}
               title={card.title}
               text={card.text}
+              id={card.id}
             />
           ))}
         </div>
