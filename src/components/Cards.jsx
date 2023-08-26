@@ -30,8 +30,8 @@ function Cards({ cardData }) {
           {cardData.map((card, index) => (
             <Card
               key={index}
-              imageUrl={card.imageUrl}
-              date={card.date}
+              image={card.image}
+              name={card.name}
               title={card.title}
               text={card.text}
               id={card.id}
