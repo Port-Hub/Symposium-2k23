@@ -1,4 +1,4 @@
-import Image from "../assets/harrypotter.0.jpg";
+import Image from "../assets/harrypotter.jpg";
 
 const eventDetails = [
   {
@@ -23,20 +23,7 @@ const eventDetails = [
         <li>
           The event will be conducted on the official code golf site: Code Golf.
         </li>
-        <li>
-          Everyone will login with their github account and follow our main
-          page's account to keep track of the leader board.
-        </li>
-        <li>
-          There will be 5 golf holes. Each hole will contain a puzzle to solve
-          in any of their preferred programming language.
-        </li>
-        <li>
-          The difficulty of the puzzle will gradually increase in each hole.
-        </li>
-        <li>
-          At the end the top 3 in the leader board will be declared as winners.
-        </li>
+        
       </>
     ),
     rules: (
@@ -72,18 +59,8 @@ const eventDetails = [
           The first round is an elimination round. Here each buddy is given five
           minutes to solve the given code. (Difficulty level : Easy, 10 minutes)
         </li>
-        <li>
-          The second round is the final round where each buddy is given 15 min
-          to solve the code.(Difficulty level : Medium to Hard, 30 minutes)
-        </li>
-        <li>
-          The team to complete the second round in least time will be declared
-          winners.
-        </li>
-        <li>
-          Any programming language is fine for us. The rest is yours!!.Come on
-          buddies, let us code!!!!
-        </li>
+       
+        
       </>
     ),
     rules: (
@@ -121,17 +98,7 @@ const eventDetails = [
           The decrypted message contains the venue of the next clue and a
           passcode.
         </li>
-        <li>
-          This passcode must be presented to the genie(volunteer) present in the
-          venue mentioned in the clue.
-        </li>
-        <li> The genie will verify the passcode and give the next clue.</li>
-        <li>
-          The team has to decode the next clue and repeat the previous process
-          till the final round.
-        </li>
-        <li> In the final round, the team must open an encrypted file.</li>
-        <li> The first to open the encrypted file will be the winner.</li>
+        
       </>
     ),
     rules: (
@@ -301,13 +268,12 @@ const eventDetails = [
           <li>3rd row</li>
           <li className="col-span-2">Full House</li>
         </ul>
-        Depending on your luck, you might get a chance to help or sabotage your
-        competition.
+        
       </>
     ),
     rules: (
       <>
-        {" "}
+        
         <li>Participants are given tickets and a rough sheet.</li>
         <li>Questions are asked randomly.</li>
         <li>
@@ -315,16 +281,8 @@ const eventDetails = [
           with the question number.
         </li>
         <li>Participants are allowed to see their neighbour’s sheets.</li>
-        <li>
-          Every five questions, a random participant is selected for the bonus
-          round.
-        </li>
-        <li>
-          If participants answer a question successfully, they can either
-          prevent a question from being asked (thereby hindering others) or
-          cause a question that is not on their sheet to be asked next (thereby
-          helping others).
-        </li>
+      
+        
       </>
     ),
   },

@@ -28,7 +28,7 @@ function Cards({ cardData }) {
       <div className="blog-slider">
         <div className="blog-slider__wrp swiper-wrapper">
           {cardData.map((card, index) => (
-            <Card
+            <Card 
               key={index}
               image={card.image}
               name={card.name}

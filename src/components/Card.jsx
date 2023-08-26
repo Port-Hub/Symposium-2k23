@@ -9,12 +9,12 @@ function Card({ image, date, name, description, id, rules }) {
       <div className="blog-slider__content">
         <span className="blog-slider__code">{date}</span>
         <div className="blog-slider__title">{name}</div>
-        <b>Description</b>
+        <div className="sub-head">Description</div>
         <div className="blog-slider__text">{description}</div>
-        <div>Rules</div>
+        <div className="sub-head">Rules</div>
         <div className="blog-slider__text">{rules}</div>
         <a href="#" className="blog-slider__button">
-          READ MORE
+          Register
         </a>
       </div>
     </div>

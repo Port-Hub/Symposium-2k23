@@ -1,11 +1,23 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+
 * {
   box-sizing: border-box;
 }
+
+
 body {
   background-color: black;
   background-image: black;
   min-height: 100vh;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Poppins', sans-serif;
   display: flex;
   cursor: url(src/assets/wand3.png), pointer;
 }
@@ -231,7 +243,7 @@ body {
 }
 .blog-slider__button {
   display: inline-flex;
-  background-color: rgb(38, 75, 161);
+  background-color: rgb(3, 4, 8);
   padding: 15px 35px;
   border-radius: 50px;
   color: #fff;
@@ -240,6 +252,7 @@ body {
   font-weight: 500;
   justify-content: center;
   text-align: center;
+  margin-left: 38%;
   letter-spacing: 1px;
 }
 @media screen and (max-width: 576px) {
@@ -304,4 +317,28 @@ body {
     height: 11px;
     width: 30px;
   }
+}
+
+.blog-slider__title{
+  font-size: 48px;
+  font-family: 'danger-night';
+  text-align: center;
+}
+
+
+@font-face {
+  font-family:"danger-night" ;
+  src: url(src/fonts/danger-night.otf);
+}
+.blog-slider__text{
+  font-size: 15px;
+}
+
+.sub-head{
+  
+  font-family: 'Montserrat', sans-serif;
+}
+.blog-slider__button:hover{
+  background-color: #fbfbfb8f;
+  color: black;
 }
