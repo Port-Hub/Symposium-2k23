@@ -28,13 +28,16 @@ function Cards({ cardData }) {
       <div className="blog-slider">
         <div className="blog-slider__wrp swiper-wrapper">
           {cardData.map((card, index) => (
-            <Card 
+            <Card
               key={index}
               image={card.image}
               name={card.name}
               description={card.description}
               id={card.id}
               rules={card.rules}
+              venue={card.venue}
+              time={card.time}
+              number={card.number}
             />
           ))}
         </div>
