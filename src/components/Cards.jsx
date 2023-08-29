@@ -6,7 +6,7 @@ function Cards({ cardData }) {
     const script = document.createElement("script");
     script.innerHTML = `
     var swiper = new Swiper(".blog-slider", {
-      spaceBetween: 30,
+      spaceBetween: 60,
       effect: "fade",
       loop: true,
       mousewheel: {

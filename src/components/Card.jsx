@@ -1,5 +1,7 @@
 import React from "react";
 import "./Card.css";
+import "./Link";
+import Link from "./Link";
 function Card({
   image,
   date,
@@ -10,7 +12,8 @@ function Card({
   venue,
   number,
   time,
-}) {
+}) 
+{
   return (
     <div data-hash={id} className="blog-slider__item swiper-slide">
       <div className="blog-slider__img">
@@ -27,7 +30,7 @@ function Card({
         <div className="blog-venue">Venue : {venue}</div>
         <div className="blog-number">Team-size : {number}</div>
         <div className="blog-time">Time : {time}</div>
-        <a href="#" className="blog-slider__button">
+        <a href={Link({id})} className="blog-slider__button" target="_blank">
           Register
         </a>
       </div>

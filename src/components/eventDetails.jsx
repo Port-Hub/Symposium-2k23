@@ -2,62 +2,59 @@ import Image from "../assets/harrypotter.jpg";
 
 const eventDetails = [
   {
-    name: "Code Golfing",
+    name: "The Chamber of Clues",
     image: Image,
-    id: "golfing",
-    number: "1",
-    venue: "A12",
-    time: "2:00 pm - 3:30 pm",
+    id: "COC",
+    number: "2-4",
+    venue: "I22, Finale@A12",
+    time: "9:30 am - 12:30 pm",
     description: (
       <>
-        <li>
-          Columbus recreational club presents to you “Code Golf” - a playground
-          where you show off your excellency in codes.
-        </li>
-        <li>
-          It goes without saying that you win by providing us the shortest
-          source code that solves the given puzzle which is very much similar to
-          the famous “Golf” game where two players compete with each other and
-          the one with the fewest club strokes wins.
-        </li>
-        <li>
-          The event will be conducted on the official code golf site: Code Golf.
-        </li>
-        
+      <li id="coc">Prepare to embark on a thrilling adventure as you navigate 
+      your way through the Chamber of Secrets in the "Enigmatic Quest." </li>
+      <li id="coc">The teams have to decipher the clues provided, employing
+      various cipher techniques provided. Upon successfully decrypting a
+      clue, teams gain the location of the next clue and a secret
+      passcode.This passcode must be shown to the witch/wizard 
+      stationed at venue in the clue</li>
+      <li id="coc">In the finale, teams will confront an encrypted file.
+      The first team to successfully decrypt the file shall
+      the victor of this extraordinary quest</li>
+      <li id="coc">The time limit will be the first three players to 
+      complete the event or 1 hour 30 minutes.</li>
       </>
     ),
     rules: (
       <>
-        <li>Login to Code Golf using your github account</li>
-        <li>
-          Stick to the timer to solve every puzzle. Any submission after it
-          won't be accepted.
+        <li id="coc">Internet is allowed in deciphering clues</li>
+        <li id="coc">
+          Teams must always report to return event venue at start and
+          conclusion of event
         </li>
-        <li>Abide by the final decisions taken by the coordinators.</li>
+        <li id="coc">Viloation of rules/damage to property/cheating 
+          results in immediate disqualification.
+        </li>
       </>
     ),
   },
   {
-    name: "Hugs & Bugs",
+    name: "Hackwarts",
     image: Image,
-    id: "hugs",
-    number: "2",
-    venue: "COE and H22",
-    time: "10:30 am - 12:00 pm",
+    id: "hackwarts",
+    number: "1-4",
+    venue: "COE and I13",
+    time: "8:30 am - 3:00 pm",
     description: (
       <>
-        <li>The game consists of Two Rounds</li>
-        <li>
-          {" "}
-          Here each buddy should code alternatively, First person will code for
-          the first few minutes followed by the second person . When the first
-          person is coding the second person will be engaged with some surprise
-          activity.{" "}
+        <li>The problem statements will be announced at the start
+          of the event.
         </li>
         <li>
-          {" "}
-          The first round is an elimination round. Here each buddy is given five
-          minutes to solve the given code. (Difficulty level : Easy, 10 minutes)
+        Within the end of the day the participants should have developed the
+        ideas into prototypes.
+        </li>
+        <li>
+        Prototypes should be pitched before the judges by the end of the day
         </li>
        
         
@@ -65,222 +62,215 @@ const eventDetails = [
     ),
     rules: (
       <>
-        <li>2 members per team.</li>
-        <li>Mobile phones and internet usage is not permitted</li>
-        <li>The decision of the event coordinators will be final</li>
-        <li>
-          Violating the rules or any kind of cheating leads to disqualification
-        </li>
+        <li> The judge's decision is final.</li>
+        <li>Participants should bring their laptops for the hackathon otherwise not
+        eligible for participation and usage of the internet is permitted.</li>
       </>
     ),
   },
   {
-    name: "Santa Maria Hunt",
+    name: "Hogwarts TechTug",
     image: Image,
-    id: "santa",
-    number: "1 - 3",
-    venue: "I22, Final Round : A12",
-    time: "10:30 am - 12:20 pm",
+    id: "techtug",
+    number: "1",
+    venue: "I24",
+    time: "9:30 am - 12:30 pm",
     description: (
       <>
-        <li>The event consists of 7 sequential rounds.</li>
+        <li>Techtug is a technical extempore.</li>
         <li>
-          {" "}
-          Each team will be given a unique clue at the beginning of the hunt.
-        </li>
-        <li>
-          {" "}
-          The team must decrypt the clue using a cipher technique from the given
-          set of cipher techniques.
-        </li>
-        <li>
-          {" "}
-          The decrypted message contains the venue of the next clue and a
-          passcode.
+        As per the topic chosen by participants,
+        they are expected to talk for the topic for 1.30 mins
+        and against the topic for 1.30 mins .
         </li>
         
       </>
     ),
     rules: (
       <>
-        <li>Internet usage is permitted.</li>
+        <li>It is an Individual event.</li>
         <li>
-          The team who decrypts and finds all the 7 clues to the treasure will
-          win the hunt.
+        Participants are supposed to choose a lot with the topic written inside .
+
         </li>
         <li>
-          The teams should report at the event venue at the beginning and end of
-          the event.
+        20 mins preparation time will be given
         </li>
-        <li>The decision of the event coordinators will be final.</li>
+        <li>Usage of mobile phones in any course of the event is strictly
+        prohibited.</li>
         <li>
-          Violating the rules, property damage or any kind of cheating leads to
-          disqualification.
+        Discussions with other participants are also not allowed.
         </li>
+        <li>Political trends are discouraged</li>
       </>
     ),
   },
   {
-    name: "Select from Brainz",
+    name: "Nanocode Sorcery",
     image: Image,
-    id: "brainz",
-    number: "2 - 3",
-    venue: "I24",
-    time: "2:00 pm - 3:30 pm",
+    id: "nano",
+    number: "2",
+    venue: "A12",
+    time: "1:30 pm - 3:00 pm",
     description: (
       <>
-        <li>25 questions will be asked.</li>
-        <li>Bring Your Own Device</li>
-        <li> Once every 6 mins a picture-based pop quiz will be conducted</li>
+        <li>The goal is to provide the shortest source code that solves 
+        the given puzzle or the problem statement,</li>
+        <li>The event will be conducted on the site:code golf</li>
+        <li> Everyone will link with their github account and follow our main
+      pages' account to keep track of the leaderboard.
+      </li>
         <li>
-          The first three teams that answer the pop quiz correctly will receive
-          an advantage
+        There will be 4 golf holes to pocket: The 1st hole consists of
+        puzzles to solve and the remaining rounds will be Code Crafting.
         </li>
-        <li>Top three teams based on the leaderboard wins.</li>
+        <li>The level of difficulty and the scoring will gradually 
+          increase in each hole.
+        </li>
       </>
     ),
     rules: (
       <>
-        {" "}
-        <li>The decorum of the event should be maintained.</li>
-        <li>The judge's decision will be final and binding</li>
-        <li>
-          For the pop quiz only the first three teams which answer correctly
-          will be rewarded with marks or an advantage.
-        </li>
-        <li>
-          All questions will circle around programming and computer-based
-          concepts
-        </li>
-        <li>Team of 2-3</li>
+        <li>Stick to the timer to solve every puzzle</li>
       </>
     ),
   },
   {
-    name: "Whack-A-Bug",
+    name: "Biwizard Tournament",
     image: Image,
-    id: "bugs",
+    id: "Tour",
     number: "2",
-    venue: "H22",
-    time: "12:30 pm - 2:00 pm",
+    venue: "H22, I23",
+    time: "9:30 pm - 12:30 pm",
     description: (
       <>
-        Whack-A-Bug is a scenario based Debugging contest in which the
-        participants will be given code snippets that contain one or more bugs
-        in it. The participants must identify the bugs and debug the code .
+        <li>Each team is composed of 2 members who will take turns coding and
+      participating in surprise activities.</li>
+      <li>In the initial round, each buddy will have five minutes to tackle a
+      given coding challenge.
+      </li>
+      <li>In the second round, Each buddy will have 15 minutes to
+       conquer a more complex coding challenge.
+      </li>
+      <li>The team that completes the second round in the least amount of
+    time will emerge victorious and be crowned as the "Biwizard
+    Tournament" champions</li>
       </>
     ),
     rules: (
       <>
         <li>Each team with exactly 2 members</li>
         <li>
-          Results of all rounds are not subjected to discussion and the judge's
-          decision is final.
+        Participants must bring their own laptops
         </li>
-        <li>Participants are not allowed to browse the Internet.</li>
         <li>
-          Any malpractices will not be tolerated and if found will be
-          disqualified.
+        Evaluators decision will be final
         </li>
-        <li>Participants must strictly abide to the timings</li>
       </>
     ),
   },
   {
-    name: "Hack Wheel",
+    name: "Bugcrux Battle",
     image: Image,
-    id: "wheel",
-    number: "4",
-    venue: "I13 and COE",
-    time: "9:30 am - 3:00 pm",
+    id: "battle",
+    number: "1-2",
+    venue: "H22 and I23",
+    time: "1:30 am - 3:00 pm",
     description: (
       <>
         <li>
-          Hack Wheel is a one day hackathon which will be conducted on 8th
-          October.
+        This event revolves around identifying, diagnosing and rectifying bugs
+        or errors in provided segments of code.
         </li>
         <li>
-          The problem statements will be announced at the start of the event.
+        The choice of programming languages may include Python, Java, C and
+        C++
         </li>
-        <li>
-          Within the end of the day the participants should have developed the
-          ideas into prototypes.
-        </li>
-        <li>And should be pitched before the judges by the end of the day.</li>
+        <li>Clues can be provided but with a catch!</li>
+      
       </>
     ),
     rules: (
       <>
-        <li> Maximum 4 members per team. </li>
-        <li> Judges decision is final</li>
-        <li>Participants should bring their own laptops.</li>
-        <li>Plagiarism should be avoided</li>
+        <li> There are a total of three rounds present.
+  Each of 30 mins duration.</li>
+        <li>The winners for round 1 will be decided based on the number of
+questions solved .
+</li>
+        <li>The winners for round 2 and 3 will be based on the time (One who finds
+the error and solves in the shortest time).
+</li>
       </>
     ),
   },
   {
-    name: "Scroll Unveilling",
+    name: "Magical Manuscripts",
     image: Image,
-    id: "scroll",
-    number: "3",
+    id: "manuscript",
+    number: "1-3",
     venue: "I21",
-    time: "9:30 am - 12:00 pm",
+    time: "8:30 am - 1:30 pm",
     description: (
       <>
         <li>
-          Scroll Unveiling is an event where the participating teams will be
-          presenting their paper.{" "}
+          This is is a showcase of cutting-edge ideas and
+discoveries in the field of computer science.
         </li>
         <li>
-          The judges will be judging based on the way of explanation of their
-          respective slides.
+        The teams will get 7 minutes for presentation and followed by question and answer.
         </li>
+        <li>Each session is for 3 mins</li>
         <li>
-          {" "}
-          The teams with clear cut and quality presentations will be awarded
-          with respective prizes.
+        Judging Criteria:
+      ➢ Content and Research (40 points)
+      ➢ Technical Excellence (30 points):
+      ➢ Presentation and Communication (20 points)
+      ➢ Q&A Interaction (10 points)
         </li>
+        <li>The top 2 teams will be shortlisted to compete with selected teams from other departments.
+Finally, 3 teams will be awarded prizes.</li>
       </>
     ),
     rules: (
       <>
-        {" "}
-        <li> 3 members per team.</li>
-        <li> Not more than 5 mins per presentation</li>
+        <li>Only Engineering college students are allowed.</li>
+        <li>Paper should have minimum of 6 pages </li>
+        <li>Bring your Bonafide certificate and college ID-Card on event day.</li>
+        <li>The registration with submissions should contain: ID of the authors</li>
       </>
     ),
   },
   {
-    name: "Turn Coat",
+    name: "Quizzitch",
     image: Image,
-    id: "turn",
-    number: "1",
+    id: "quiz",
+    number: "1-2",
     venue: "I24",
-    time: "10:30 am - 12:00 pm",
+    time: "1:30 pm - 3:00 pm",
     description: (
       <>
-        A game of luck and brains; Tambola with a twist. <br />
-        There are 5 Prizes
-        <ul className="justify-content-center mx-10 flex list-disc flex-row flex-wrap gap-x-10 gap-y-2">
-          <li>Fast 5</li>
-          <li>1st row</li>
-          <li>2nd row</li>
-          <li>3rd row</li>
-          <li className="col-span-2">Full House</li>
-        </ul>
-        
+              Tambola, also known as Bingo or Housie, a classic numbers game. But
+      with a twist in the usual game.
+    <li>Participants will be given tickets and a rough sheet
+    </li>
+    <li>Questions are asked randomly (technical)
+    </li>
+    <li> If participants locate the answer in their sheets, they are to mark it
+    with the question number</li>
+    <li>For every 5 questions a random participant is selected for the bonus
+    round
+    </li>    
       </>
     ),
     rules: (
       <>
         
-        <li>Participants are given tickets and a rough sheet.</li>
-        <li>Questions are asked randomly.</li>
+        <li>Participants are allowed to view their neighbor’s sheet.</li>
         <li>
-          If participants locate the answer on their sheet, they are to mark it
-          with the question number.
+        Winners will be declared based on the winning pattern after
+verification
         </li>
-        <li>Participants are allowed to see their neighbour’s sheets.</li>
+        
       
         
       </>
