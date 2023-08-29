@@ -16,7 +16,7 @@ body {
   min-height: 100vh;
   font-family: "Poppins", sans-serif;
   display: flex;
-  cursor: url(src/assets/wand3.png), pointer;
+  cursor: url(/assets/wand3.png), pointer;
   /* overflow: hidden; */
 }
 
