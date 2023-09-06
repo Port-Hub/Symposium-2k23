@@ -1,0 +1,202 @@
+@import url("https://fonts.cdnfonts.com/css/trajan-pro");
+$font-default: "Inter", sans-serif;
+
+$max-width: 1248px;
+
+// Theme colors
+$color-highlight: #d0a148;
+$color-black: #000;
+$color-white: #fff;
+$color-error: #d7182a;
+$color-placeholder: rgba(255, 255, 255, 0.5);
+$bg-linear-dark: linear-gradient(
+  90deg,
+  rgba(0, 0, 0, 1) 0%,
+  rgba(208, 161, 72, 0.08) 100%
+);
+
+// Text colors
+$color-text-primary: $color-white;
+@mixin min-desktop {
+  @media only screen and (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin max-mobile {
+  @media only screen and (max-width: 992px) {
+    @content;
+  }
+}
+
+body {
+  font-family: "Trajan Pro", sans-serif;
+}
+.introduction {
+  position: relative;
+  background-image: url("../assets/background.webp");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  overflow: hidden;
+  min-height: 80vh;
+  min-width: 200vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    font-size: 24px;
+    flex: 1;
+    position: absolute;
+    top: 30%;
+    padding: 0 8px;
+    text-align: center;
+    font-family: "Trajan Pro", sans-serif;
+    color: $color-white;
+    @include min-desktop {
+      font-size: 36px;
+    }
+  }
+}
+.buttoncont {
+  position: absolute;
+  top: 60%;
+}
+.logo {
+  filter: drop-shadow(2px 4px 6px $color-black);
+  height: 40%;
+  width: 40%;
+}
+
+@keyframes shine {
+  0% {
+    background-position-x: -500%;
+  }
+
+  100% {
+    background-position-x: 500%;
+  }
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  color: inherit;
+  width: 200px;
+  height: 60px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Trajan Pro", sans-serif;
+
+  position: relative;
+}
+
+.btn {
+  font-family: "Trajan Pro", sans-serif;
+
+  border: 2px solid;
+  animation: 0.5s collision ease-in;
+  overflow: hidden;
+  transition: 0.3s 0.1s;
+
+  &:active {
+    transform: translateX(100px);
+    background: rgba(255, 255, 255, 0.5);
+  }
+
+  p {
+    position: relative;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.2rem;
+    font-family: "Trajan Pro", sans-serif;
+    z-index: 5;
+    transition: 1s ease-in-out;
+  }
+
+  &:hover {
+    p {
+      color: #000000;
+    }
+  }
+
+  &:before,
+  &:after {
+    content: "";
+    border-radius: 50%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 20px;
+    width: 20px;
+    font-family: "Trajan Pro", sans-serif;
+    perspective: 1px;
+    background-color: #ffffff;
+  }
+
+  &:hover {
+    &:before {
+      animation: collisionLeft 1s both;
+      animation-direction: alternate;
+    }
+    &:after {
+      animation: collisionRight 1s both;
+      animation-direction: alternate;
+    }
+  }
+
+  &:before {
+    left: -30%;
+  }
+  &:after {
+    left: 125%;
+  }
+
+  @keyframes collisionLeft {
+    0% {
+      left: -30%;
+      width: 20px;
+      height: 20px;
+    }
+    50% {
+      left: 50%;
+      width: 40px;
+      height: 40px;
+    }
+    100% {
+      left: 50%;
+      width: 300px;
+      height: 300px;
+    }
+  }
+
+  @keyframes collisionRight {
+    0% {
+      left: 125%;
+      width: 20px;
+      height: 20px;
+    }
+    50% {
+      left: 50%;
+      width: 40px;
+      height: 40px;
+    }
+    100% {
+      left: 50%;
+      width: 300px;
+      height: 300px;
+    }
+  }
+}
+
+.btn-3 {
+  filter: url("#goo");
+  border: none;
+  font-family: "Trajan Pro", sans-serif;
+  background: transparent;
+}

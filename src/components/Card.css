@@ -305,7 +305,7 @@ body {
 
 @font-face {
   font-family: "danger-night";
-  src: url(src/fonts/danger-night.otf);
+  src: url(/fonts/danger-night.otf);
 }
 .blog-slider__text {
   font-size: 15px;
@@ -327,6 +327,13 @@ body {
   margin: 30px auto 0px;
   letter-spacing: 1px;
 }
+
+.blog-slider__button:hover {
+  cursor: pointer;
+  background-color: #fbfbfb;
+  color: black;
+}
+
 @media screen and (max-width: 576px) {
   .blog-slider__button {
     width: 100%;
