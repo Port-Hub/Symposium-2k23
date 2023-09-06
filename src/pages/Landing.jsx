@@ -4,7 +4,7 @@ import "./Introduction.style.scss";
 import bg from "../../public/assets/background.webp";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
-
+import AudioPlayer from "../../public/audio/audio";
 const Landing = () => {
   const navigate = useNavigate();
 
@@ -33,6 +33,7 @@ const Landing = () => {
           <p>Explore Events &rarr;</p>
         </button>
       </div>
+      <AudioPlayer/>
     </div>
   );
 };
