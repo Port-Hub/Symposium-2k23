@@ -8,7 +8,7 @@ const Landing = () => {
   const navigate = useNavigate();
   const clickhandler = () => {
     console.log("hellox");
-    navigate("/events");
+    navigate(`/events`);
   };
   return (
     <div className="introduction">
@@ -29,6 +29,7 @@ const Landing = () => {
         <button className="btn btn-3" onClick={clickhandler}>
           <p>Explore Events &rarr;</p>
         </button>
+        {/* <button onClick={clickhandler}>Explore Events</button> */}
       </div>
     </div>
   );

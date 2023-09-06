@@ -1,9 +1,18 @@
 import Image from "/assets/harrypotter.jpg";
 
+import COC from "../../public/assets/Logos/9.png";
+import hack from "../../public/assets/Logos/11.png";
+import battle from "../../public/assets/Logos/8.png";
+import quiz from "../../public/assets/Logos/10.png";
+import biwiz from "../../public/assets/Logos/7.png";
+import manuscript from "../../public/assets/Logos/13.png";
+import socery from "../../public/assets/Logos/12.png";
+import TechTug from "../../public/assets/Logos/14.png";
+
 const eventDetails = [
   {
     name: "The Chamber of Clues",
-    image: Image,
+    image: COC,
     id: "COC",
     number: "2-4",
     venue: "I22, Finale@A12",
@@ -47,7 +56,7 @@ const eventDetails = [
   },
   {
     name: "Hackwarts",
-    image: Image,
+    image: hack,
     id: "hackwarts",
     number: "1-4",
     venue: "COE and I13",
@@ -78,7 +87,7 @@ const eventDetails = [
   },
   {
     name: "Hogwarts TechTug",
-    image: Image,
+    image: TechTug,
     id: "techtug",
     number: "1",
     venue: "I24",
@@ -111,7 +120,7 @@ const eventDetails = [
   },
   {
     name: "Nanocode Sorcery",
-    image: Image,
+    image: socery,
     id: "nano",
     number: "2",
     venue: "A12",
@@ -146,7 +155,7 @@ const eventDetails = [
   },
   {
     name: "Biwizard Tournament",
-    image: Image,
+    image: biwiz,
     id: "Tour",
     number: "2",
     venue: "H22, I23",
@@ -182,7 +191,7 @@ const eventDetails = [
   },
   {
     name: "Bugcrux Battle",
-    image: Image,
+    image: battle,
     id: "battle",
     number: "1-2",
     venue: "H22 and I23",
@@ -219,7 +228,7 @@ const eventDetails = [
   },
   {
     name: "Magical Manuscripts",
-    image: Image,
+    image: manuscript,
     id: "manuscript",
     number: "1-3",
     venue: "I21",
@@ -261,7 +270,7 @@ const eventDetails = [
   },
   {
     name: "Quizzitch",
-    image: Image,
+    image: quiz,
     id: "quiz",
     number: "1-2",
     venue: "I24",
