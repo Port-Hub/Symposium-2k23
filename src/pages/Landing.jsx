@@ -1,6 +1,6 @@
 import Logo from "./logo.png";
 import Waves from "../components/Waves";
-import "./Landing.css";
+import "./Introduction.style.scss";
 import bg from "../../public/assets/background.webp";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
@@ -28,10 +28,10 @@ const Landing = () => {
         <br /> A National level technical symposium
         <br /> Xplore 2k23
       </div>
-      <div className="explore">
-        <a href="/events" className="btn-explore">
-          <p>Explore Events &rarr;</p>
-        </a>
+      <div className="buttoncont">
+      <button className="btn btn-3" onClick={clickHandler} >
+		  <p>Explore Events &rarr;</p>
+	    </button>
       </div>
     </div>
   );
