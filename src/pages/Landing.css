@@ -66,6 +66,7 @@ button {
   animation: 0.5s collision ease-in;
   overflow: hidden;
   transition: 0.3s 0.1s;
+  margin-top: 30px;
 }
 .btn:active {
   transform: translateX(100px);
@@ -82,6 +83,7 @@ button {
 }
 .btn:hover p {
   color: #000;
+  cursor: pointer !important;
 }
 .btn:before,
 .btn:after {
@@ -96,6 +98,7 @@ button {
   font-family: "Trajan Pro", sans-serif;
   perspective: 1px;
   background-color: #fff;
+  cursor: pointer;
 }
 .btn:hover:before {
   animation: collisionLeft 1s both;
@@ -104,6 +107,7 @@ button {
 .btn:hover:after {
   animation: collisionRight 1s both;
   animation-direction: alternate;
+  cursor: pointer;
 }
 .btn:before {
   left: -30%;
