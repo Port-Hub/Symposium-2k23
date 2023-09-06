@@ -202,6 +202,12 @@
 // }
 
 @import url("https://fonts.cdnfonts.com/css/trajan-pro");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nunito+Sans:ital,opsz,wght@1,6..12,500&display=swap");
+
+@font-face {
+  font-family: harryp;
+  src: url(public/fonts/HarryP-MVZ6w.ttf);
+}
 $font-default: "Inter", sans-serif;
 
 $max-width: 1248px;
@@ -234,31 +240,34 @@ $color-text-primary: $color-white;
 }
 
 body {
-  font-family: "Trajan Pro", sans-serif;
-}
-
-.introduction {
-  position: relative;
+  font-family: "Montserrat", sans-serif;
   background-image: url("../assets/background.webp");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
+}
+
+.introduction {
+  position: relative;
+  
   overflow: hidden;
   min-height: 80vh;
-  min-width: 175vh;
+  min-width: 200vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
 
   &__title {
-    font-size: 24px;
+    font-size: 22px;
     flex: 1;
     position: absolute;
     top: 30%;
     padding: 0 8px;
     text-align: center;
-    font-family: "Trajan Pro", sans-serif;
+    animation: fadeIn 3s;
+    font-family: harryp;
+    padding-left: 15%;
     color: $color-white;
 
     @include min-desktop {
@@ -266,16 +275,27 @@ body {
     }
   }
 }
-
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
 .buttoncont {
   position: absolute;
   top: 60%;
+  font-family: harryp;
+  animation: fadeIn 7s;
 }
 
 .logo {
   filter: drop-shadow(2px 4px 6px $color-black);
   height: 40%;
   width: 40%;
+  padding-left: 10%;
+  animation: fadeIn 3s;
 }
 
 @keyframes shine {
@@ -298,12 +318,12 @@ button {
   height: 60px;
   cursor: pointer;
   font-size: 16px;
-  font-family: "Trajan Pro", sans-serif;
+  font-family: harryp;
   position: relative;
 }
 
 .btn {
-  font-family: "Trajan Pro", sans-serif;
+  margin-left: 30%;
   z-index: 10;
   border: 2px solid;
   animation: 0.5s collision ease-in;
@@ -320,7 +340,7 @@ button {
     color: #ffffff;
     font-weight: 700;
     font-size: 1.2rem;
-    font-family: "Trajan Pro", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     z-index: 5;
     transition: 1s ease-in-out;
   }
@@ -412,17 +432,18 @@ button {
 @include max-mobile {
   .introduction {
     min-width: 100%;
+    margin-left: -5%;
   }
 
   .buttoncont {
     top: 50%;
   }
 
-  .logo {
-    height: 50%;
-    width: 50%;
+  
+  .btn{
+    
+    margin-left: 20%;
   }
-
   button {
     width: 150px;
     height: 50px;
@@ -442,6 +463,6 @@ button {
 
   .logo {
     height: 30%; /* Adjust the size of the logo */
-    width: 30%;
+    width: 80%;
   }
 }

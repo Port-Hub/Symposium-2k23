@@ -19,8 +19,9 @@ function Card({
       return "https://docs.google.com/forms/d/e/1FAIpQLSecgCB2LtCqQU6G8sr1nzfrXdEwt_KjG2ZMuIRFDn6RHgO3TQ/viewform";
     }
   }
+  
   return (
-    <div data-hash={id} className="blog-slider__item swiper-slide">
+    <div data-hash={id} className="blog-slider__item swiper-slide" >
       <div className="blog-slider__img">
         <img src={image} alt="" />
       </div>

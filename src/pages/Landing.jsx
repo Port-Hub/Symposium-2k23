@@ -15,7 +15,7 @@ const Landing = () => {
 
   return (
     <div className="introduction">
-      <Waves />
+     
       <img
         className="logo"
         alt="Harry Potter Logo"
@@ -25,7 +25,7 @@ const Landing = () => {
       />
       <div className="introduction__title">
         Department of Computer Science and Engineering presents
-        <br /> A National level technical symposium
+        <br /> A National Level Technical Symposium:
         <br /> Xplore 2k23
       </div>
       <div className="buttoncont">
