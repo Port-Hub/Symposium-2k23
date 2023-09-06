@@ -1,14 +1,16 @@
 /* @import url("https://fonts.cdnfonts.com/css/trajan-pro"); */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nunito+Sans:ital,opsz,wght@1,6..12,500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nunito+Sans:ital,opsz,wght@1,6..12,500&display=swap");
 
 @font-face {
-  font-family:harryp ;
+  font-family: harryp;
   src: url(public/fonts/HarryP-MVZ6w.ttf);
 }
+
 body {
   font-family: "Trajan Pro", sans-serif;
 }
+
 .introduction {
   position: absolute;
   background-image: url("../assets/background.webp");
@@ -22,6 +24,7 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
 .introduction__title {
   font-size: 30px;
   flex: 1;
@@ -33,11 +36,13 @@ body {
   font-family: harryp;
   color: #fff;
 }
+
 @media only screen and (min-width: 992px) {
   .introduction__title {
     font-size: 34px;
   }
 }
+
 @media only screen and (max-width: 720px) {
   .introduction__title {
     font-size: 30px;
@@ -45,13 +50,9 @@ body {
     position: absolute;
     top: 20%;
   }
-  .explore{
-    
-   
-    padding-top:70%;
-  
+  .explore {
+    padding-top: 70%;
   }
-
 }
 
 .logo {
@@ -59,6 +60,7 @@ body {
   height: 40%;
   width: 40%;
 }
+
 @keyframes shine {
   0% {
     background-position-x: -500%;
@@ -68,15 +70,7 @@ body {
   }
 }
 
-
-
-button{
-  cursor: pointer !important;
-  color: #fff;
-  font-family: 'Montserrat', sans-serif;
-}
-
-/* CSS */
+/* Adjust styles for the <a> tag */
 .btn-explore {
   position: relative;
   overflow: hidden;
@@ -87,7 +81,7 @@ button{
   font-size: 15px;
   pointer-events: all;
   background-color: #0000007c;
-  padding:20px;
+  padding: 20px;
   text-decoration: none;
   cursor: pointer !important;
   background: #17161656;
@@ -95,8 +89,12 @@ button{
   -webkit-user-select: none;
   touch-action: manipulation;
   box-sizing: border-box;
-  margin-top: 120px;
+  margin-top: 20px; /* Adjust as needed */
+  text-align: center; /* Center the link horizontally */
+}
 
+.btn-explore p {
+  margin: 0; /* Remove default margin from the <p> tag */
 }
 
 .btn-explore span:first-child {
@@ -155,7 +153,8 @@ button{
   color: #fff;
 }
 
-.explore{
-  cursor:  pointer !important;
+.explore {
+  cursor: pointer !important;
+  text-align: center; /* Center the link horizontally */
+  margin-top: 220px; /* Add some top margin to create space between text and link */
 }
-

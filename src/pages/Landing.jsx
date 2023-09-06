@@ -1,16 +1,18 @@
 import Logo from "./logo.png";
 import Waves from "../components/Waves";
-// import "./Introduction.style.scss";
 import "./Landing.css";
 import bg from "../../public/assets/background.webp";
 import { useNavigate } from "react-router-dom";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+
 const Landing = () => {
   const navigate = useNavigate();
-  const clickhandler = () => {
+
+  const clickHandler = () => {
     console.log("hellox");
     navigate(`/events`);
   };
+
   return (
     <div className="introduction">
       <Waves />
@@ -27,10 +29,9 @@ const Landing = () => {
         <br /> Xplore 2k23
       </div>
       <div className="explore">
-        <button type="button" className="btn-explore" onClick={clickhandler}>
+        <a href="/events" className="btn-explore">
           <p>Explore Events &rarr;</p>
-        </button>
-        {/* <button onClick={clickhandler}>Explore Events</button> */}
+        </a>
       </div>
     </div>
   );
