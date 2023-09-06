@@ -4,6 +4,7 @@ import Waves from "../components/Waves";
 import "./Landing.css";
 import bg from "../../public/assets/background.webp";
 import { useNavigate } from "react-router-dom";
+import { Link } from 'react-router-dom';
 const Landing = () => {
   const navigate = useNavigate();
   const clickhandler = () => {
@@ -20,13 +21,13 @@ const Landing = () => {
         width={200}
         height={200}
       />
-      <h1 className="introduction__title">
+      <div className="introduction__title">
         Department of Computer Science and Engineering presents
-        <br /> national level Technical symposium
+        <br /> A National level technical symposium
         <br /> Xplore 2k23
-      </h1>
-      <div className="buttoncont">
-        <button className="btn btn-3" onClick={clickhandler}>
+      </div>
+      <div className="explore">
+        <button type="button" className="btn-explore" onClick={clickhandler}>
           <p>Explore Events &rarr;</p>
         </button>
         {/* <button onClick={clickhandler}>Explore Events</button> */}
