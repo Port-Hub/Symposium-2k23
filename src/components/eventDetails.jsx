@@ -15,7 +15,7 @@ const eventDetails = [
     image: COC,
     id: "COC",
     number: "2-4",
-    venue: "I22, Finale@A12",
+    venue: "I22",
     time: "9:30 am - 12:30 pm",
     description: (
       <>
