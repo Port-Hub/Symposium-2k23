@@ -12,6 +12,7 @@ const Landing = () => {
     console.log("hellox");
     navigate(`/events`);
   };
+  
 
   return (
     <div className="introduction">
@@ -32,9 +33,16 @@ const Landing = () => {
         <button className="btn btn-3" onClick={clickHandler}>
           <p>Explore Events &rarr;</p>
         </button>
+       
+        
+    
+      
       </div>
+      
       <AudioPlayer/>
+      
     </div>
+    
   );
 };
 
