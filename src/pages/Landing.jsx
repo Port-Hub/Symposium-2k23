@@ -36,8 +36,8 @@ const Landing = () => {
         </button>
       </div>
       <div className="Sponsor">
-    <div className="sponsor1">Title Sponsor:<br></br><img src="public/assets/sponsor1.png" width="100px" height="60px"  ></img></div>
-    <div className="sponsor1">Associate Sponsors:<br></br><img src="public/assets/sponsor2.png" width="200px" height="55px" ></img></div>
+    <div className="sponsor1">Title Sponsor:<br></br><img src="public/assets/sponsor11.png" width="100px" height="60px"  ></img></div>
+    <div className="sponsor1">Associate Sponsors:<br></br><img src="public/assets/sponsor22.png" width="200px" height="55px" ></img></div>
     </div>
         
       <AudioPlayer/>
