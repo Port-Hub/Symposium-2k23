@@ -2,14 +2,15 @@ import Flakes from "../components/Background";
 import Cards from "../components/Cards";
 import eventDetails from "../components/eventDetails";
 import AudioPlayer from "../../public/audio/audio";
+import '../components/card.css'
 import { useEffect } from "react";
 
 const Events = () => {
-  useEffect(() => {
-    const a = document.createElement("a");
-    a.href = "#popup";
-    a.click();
-  }, []);
+  // useEffect(() => {
+  //   const a = document.createElement("a");
+  //   a.href = "#popup";
+  //   a.click();
+  // }, []);
 
   return (
     <>
@@ -36,6 +37,10 @@ const Events = () => {
       <div>
         <Flakes />
         <Cards cardData={eventDetails} />
+        <div className="flex flex-col items-center justify-center w-screen">
+          {/* <p className="text-primary blog-slider__title"> Want to Play a fun quiz???</p> */}
+          <a href="https://crossword-techczar.netlify.app" className="blog-slider__button"><p className="blog-slider__title m-0 text-3xl">Access a fun puzzle</p></a>
+        </div>
         <AudioPlayer />
       </div>
     </>
