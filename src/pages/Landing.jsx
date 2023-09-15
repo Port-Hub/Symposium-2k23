@@ -29,7 +29,7 @@ const Landing = () => {
         <br /> Xplore 2k23
       </div>
       <div className="buttoncont">
-        <button className="btn btn-3" onClick={clickHandler}>
+        <button className="btn btn-secondary" onClick={clickHandler}>
           <p>Explore Events &rarr;</p>
         </button>
       </div>
