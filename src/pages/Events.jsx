@@ -6,11 +6,11 @@ import '../components/card.css'
 import { useEffect } from "react";
 
 const Events = () => {
-  // useEffect(() => {
-  //   const a = document.createElement("a");
-  //   a.href = "#popup";
-  //   a.click();
-  // }, []);
+  useEffect(() => {
+    const a = document.createElement("a");
+    a.href = "#popup";
+    a.click();
+  }, []);
 
   return (
     <>
