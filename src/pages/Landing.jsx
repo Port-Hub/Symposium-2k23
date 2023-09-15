@@ -15,6 +15,7 @@ const Landing = () => {
   
 
   return (
+    
     <div className="introduction">
      
       <img
@@ -33,15 +34,17 @@ const Landing = () => {
         <button className="btn btn-3" onClick={clickHandler}>
           <p>Explore Events &rarr;</p>
         </button>
-       
-        
-    
-      
       </div>
-      
+      <div className="Sponsor">
+    <div className="sponsor1">Title Sponsor:<br></br><img src="public/assets/sponsor1.jpg" width="40px" height="40px"  ></img></div>
+    <div className="sponsor1">Associate Sponsors:<br></br><img src="public/assets/sponsor2.jpg" width="180px" height="35px" ></img></div>
+    </div>
+        
       <AudioPlayer/>
       
     </div>
+    
+    
     
   );
 };
