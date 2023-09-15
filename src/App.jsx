@@ -1,13 +1,15 @@
-import React, { useRef } from "react";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import "./App.css";
-import AllRoutes from "./AllRoutes";
+import Events from "./pages/Events";
+import Landing from "./pages/Landing";
 
 function App() {
   return (
     <BrowserRouter>
-      <AllRoutes />
+    <Routes>
+      <Route path="/events" element={<Events />}></Route>
+      <Route path="/" element={<Landing />}></Route>
+    </Routes>
     </BrowserRouter>
   );
 }

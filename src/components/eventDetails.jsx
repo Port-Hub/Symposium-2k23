@@ -1,5 +1,3 @@
-import Image from "/assets/harrypotter.jpg";
-
 import COC from "../../public/assets/Logos/9.png";
 import hack from "../../public/assets/Logos/11.png";
 import battle from "../../public/assets/Logos/8.png";

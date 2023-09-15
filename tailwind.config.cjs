@@ -1,26 +1,18 @@
-// /** @type {import('tailwindcss').Config} */
-// export default {
-//   content: ["./src/**/*.{html,js}"],
-//   theme: {
-//     extend: {},
-//   },
-//   plugins: [require("daisyui")],
-// };
+/** @type {import('tailwindcss').Config} */
 
-module.exports = {
+import daisyui from 'daisyui';
+
+export default {
   content: ["index.html", "./src/**/*.{js,jsx,ts,tsx,vue,html}"],
   theme: {
     extend: {
-      // backgroundImage: {
-      //   "sea-theme": "url('/src/assets/parallax/Proper/PNG/1sky.png')",
-      // },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },
     },
   },
   daisyui: {
-    themes: [
+    themes: ["luxury",
       {
         myBlue: {
           primary: "#06283D",
@@ -36,5 +28,5 @@ module.exports = {
       },
     ],
   },
-  plugins: [require("daisyui")],
+  plugins: [daisyui],
 };

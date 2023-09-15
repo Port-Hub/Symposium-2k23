@@ -1,10 +1,11 @@
 import Logo from "./logo.png";
-import Waves from "../components/Waves";
 import "./Introduction.style.scss";
-import bg from "../../public/assets/background.webp";
 import { useNavigate } from "react-router-dom";
-import { Link } from "react-router-dom";
 import AudioPlayer from "../../public/audio/audio";
+
+import Sponsor1 from "../assets/sponsor11.png";
+import Sponsor2 from "../assets/sponsor22.png";
+
 const Landing = () => {
   const navigate = useNavigate();
 
@@ -12,12 +13,9 @@ const Landing = () => {
     console.log("hellox");
     navigate(`/events`);
   };
-  
 
   return (
-    
     <div className="introduction">
-     
       <img
         className="logo"
         alt="Harry Potter Logo"
@@ -36,16 +34,26 @@ const Landing = () => {
         </button>
       </div>
       <div className="Sponsor">
-    <div className="sponsor1">Title Sponsor:<br></br><img src="public/assets/sponsor11.png" width="100px" height="60px"  ></img></div>
-    <div className="sponsor1">Associate Sponsors:<br></br><img src="public/assets/sponsor22.png" width="200px" height="55px" ></img></div>
+        <div className="sponsor1">
+          Title Sponsor:<br></br>
+          <img
+            src={Sponsor1}
+            width="100px"
+            height="60px"
+          ></img>
+        </div>
+        <div className="sponsor1">
+          Associate Sponsors:<br></br>
+          <img
+            src={Sponsor2}
+            width="200px"
+            height="55px"
+          ></img>
+        </div>
+      </div>
+
+      <AudioPlayer />
     </div>
-        
-      <AudioPlayer/>
-      
-    </div>
-    
-    
-    
   );
 };
 
